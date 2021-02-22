@@ -1,0 +1,20 @@
+#注册进eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+#配置网关端口号
+server:
+  port: 8092
+spring:
+  application:
+    name: zuul-server
+#配置网关转发详情
+zuul:
+  routes:
+    api-a:
+      path: /user/**
+      service-id: user-system
+    api-b:
+      path: /order/**
+      service-id: order-system
