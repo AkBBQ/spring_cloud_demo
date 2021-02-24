@@ -1,4 +1,4 @@
-package com.example.order;
+package com.example.configclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,17 +7,12 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * 启动类
- *
- * @author angtai
- */
 @EnableEurekaClient
 @SpringBootApplication
-public class OrderApplication {
+public class ConfigClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderApplication.class, args);
+        SpringApplication.run(ConfigClientApplication.class, args);
     }
 
     /**
@@ -30,5 +25,4 @@ public class OrderApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-
 }

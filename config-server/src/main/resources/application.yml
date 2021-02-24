@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AkBBQ/spring_cloud_config.git  # 远程git仓库的地址
+          #加入这个配置就可以正常请求到git上的配置文件了 请求配置文件的目录
+          default-label: main
+          username: AkBBQ  # 以及相应的账户名
+          password: SUNjie970306  # 和密码
+          # 可以使用这个配置项来指定本地git仓库的路径
+          # basedir: E:\Java_IDEA\config\basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 8974

@@ -10,3 +10,10 @@ spring:
   application:
     #    注册进eureka的名字
     name: order-system
+
+
+# 开启熔断机制
+feign:
+  hystrix:
+    enabled: true
+
