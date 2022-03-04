@@ -5,12 +5,17 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * All rights Reserved, Designed By www.maihaoche.com
+ * AFeign是一个声明式的伪Http客户端，它使得写Http客户端变得更简单。使用Feign，
+ * 只需要创建一个接口并注解。它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。Feign支持可插拔的编码器和解码器。Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。
  *
- * @Package com.sun.cloud_client2.controller.service
- * @author: angtai（angtai@maihaoche.com）
- * @date: 2020/3/16 4:49 PM
- * @Copyright: 2017-2020 www.maihaoche.com Inc. All rights reserved.
+ * 简而言之：
+ *
+ * ·Feign 采用的是基于接口的注解
+ *
+ * ·Feign 整合了ribbon
+ * ————————————————
+ * 版权声明：本文为CSDN博主「我想E得足够快」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+ * 原文链接：https://blog.csdn.net/weixin_44448094/article/details/88535475
  */
 
 @Service

@@ -37,7 +37,7 @@ public class IndexController {
      */
     @RequestMapping("/doRpc")
     public String test(){
-        return restTemplate.getForObject("https://user-server/welcomeToUser",String.class);
+        return restTemplate.getForObject("http://user-system/welcomeToUser",String.class);
     }
 
 

@@ -15,10 +15,10 @@ public class HystrixService {
 
     @HystrixCommand(fallbackMethod = "fallback")
     public  String hi() {
-        return new RestTemplate().getForObject("http://localhost:8090/exception", String.class);
+        return new RestTemplate().getForObject("http://order-system/exception", String.class);
     }
 
     public String fallback() {
-        return "调用失败 出错了 ";
+        return "调用失败 出错了111111111111";
     }
 }

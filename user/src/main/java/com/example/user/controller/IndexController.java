@@ -2,10 +2,12 @@ package com.example.user.controller;
 
 import com.example.user.controller.service.HystrixService;
 import com.example.user.controller.service.OrderService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * All rights Reserved, Designed By www.maihaoche.com
@@ -54,7 +56,5 @@ public class IndexController {
     public String test3() {
         return hystrixService.hi();
     }
-
-
 
 }
